@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: bookstore-app-api
+server:
+  port: 8080
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
+    
+from: dev-environment-1.0...
