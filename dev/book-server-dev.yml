@@ -1,5 +1,10 @@
 spring:
   application:
-    name: bookcenter
-
+    name: bookstore-book-center
+server:
+  port: 8001
+management:
+  security:
+    enabled: false
+    
 from: dev-environment-1.0...
