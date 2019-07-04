@@ -3,8 +3,10 @@ spring:
     name: bookstore-book-center
 server:
   port: 8001
-management:
-  security:
-    enabled: false
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
     
 from: dev-environment-1.0...
