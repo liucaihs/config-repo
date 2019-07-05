@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: bookcenter
-
-from: dev-environment-1.0
