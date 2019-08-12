@@ -9,4 +9,8 @@ eureka:
     service-url:
       defaultZone: http://localhost:1001/eureka/
     
+logging:
+  level:
+    cn.zealon.bookstore.bookcenter.feign.client.BookClient: debug
+
 from: dev-environment-1.0...
