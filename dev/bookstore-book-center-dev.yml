@@ -9,4 +9,9 @@ eureka:
     service-url:
       defaultZone: http://localhost:1001/eureka/
     
+feign:
+  compression:
+    response:
+      enabled: true     
+      
 from: dev-environment-1.0...
