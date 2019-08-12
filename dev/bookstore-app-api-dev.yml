@@ -11,7 +11,7 @@ eureka:
     
 feign:
   compression:
-   request:
+    request:
       enabled: true
       mime-type: text/html,application/xml,application/json
       min-request-size: 2048
