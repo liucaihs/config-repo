@@ -9,6 +9,11 @@ eureka:
     service-url:
       defaultZone: http://localhost:1001/eureka/
     
+feign:
+  compression:
+    response:
+      enabled: true  
+
 logging:
   level:
     cn.zealon.bookstore.bookcenter.feign.client.BookClient: debug
