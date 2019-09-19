@@ -41,8 +41,8 @@ hystrix:
           thread:
             timeoutInMilliseconds: 3000 #最大超时时间:3秒(单位毫秒)
 
-logging:
-  level:
-    cn.zealon.bookstore.bookcenter.feign.client.BookClient: debug
+#logging:
+#  level:
+#    cn.zealon.bookstore.bookcenter.feign.client.BookClient: debug
 
 from: dev-environment-1.0...
