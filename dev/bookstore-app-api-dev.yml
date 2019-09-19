@@ -12,8 +12,8 @@ eureka:
 feign:
   okhttp:
     enabled: true
-  hystrix:
-    enabled: true
+#  hystrix:
+#    enabled: true
   compression:
     request:
       enabled: true
