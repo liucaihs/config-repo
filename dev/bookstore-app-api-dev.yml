@@ -10,6 +10,10 @@ eureka:
       defaultZone: http://localhost:1001/eureka/
     
 feign:
+  okhttp:
+    enabled: true
+  hystrix:
+    enabled: true
   compression:
     request:
       enabled: true
@@ -17,6 +21,25 @@ feign:
       min-request-size: 2048
     response:
       enabled: true
+      
+hystrix:
+  threadpool:
+    default:
+      coreSize: 10
+      maximumSize: 30
+      maxQueueSize: 1500
+      queueSizeRejectionThreshold: 1000
+  command:
+    default:
+     execution:
+      timeout:
+       enabled: true #使用线程隔离时，当命令超时时是否对命令所在线程执行中断操作，默认为true
+      isolation:
+       strategy: THREAD # 线程分隔
+       semaphore:
+            maxConcurrentRequests: 100 #线程数100
+       thread:
+          timeoutInMilliseconds: 3000 #最大超时时间:3秒(单位毫秒)
 
 logging:
   level:
